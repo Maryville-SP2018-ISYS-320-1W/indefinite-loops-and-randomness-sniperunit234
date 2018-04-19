@@ -6,42 +6,43 @@
 
 /*
  How many times do you expect the loop to repeat? Remember that 
- “zero,” “infinity,” and “unknown” are legal answers.
+ â€œzero,â€� â€œinfinity,â€� and â€œunknownâ€� are legal answers.
  
  What do you expect the loop to output?
  
  (a)
- Repeats:
- Expected output:
+ Repeats: Goes up by 10 till it reaches 100
+ Expected output:1 11 21 31 41 51 61 71 81 91
  (b)
- Repeats:
- Expected output:
+ Repeats:Starting loop test and ending loop test	
+ Expected output: starting loop test and ending loop test 10 times each
  (c)
- Repeats:
- Expected output:
+ Repeats: 250
+ Expected output: I believe it runs for infinity
  (d)
- Repeats:
- Expected output:
+ Repeats:none	
+ Expected output: starting loop test and ending loop test
    
  */
 
 /*
  Was your prediction correct?
  
- (a)
- (b)
- (c)
- (d)
+ (a) yes
+ (b) no
+ (c) yes and no, i guessed wrong on output, but new it was infinite
+ (d) yes
 
 */
 public class P1_LoopPredictions {
 
 	public static void main(String[] args) {
 		System.out.println("STARTING LOOP TEST");
-		
-		
-		// copy and paste the loop to test between here, between the println statements
-		
+		// d
+		String word = "a";
+		while( word.length() < 10 ) {
+		    word = "b" + word + "b";
+		}
 				
 		System.out.println("ENDING LOOP TEST");
 	}
